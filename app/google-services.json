@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "262576012032",
+    "firebase_url": "https://marven-6c727.firebaseio.com",
+    "project_id": "marven-6c727",
+    "storage_bucket": "marven-6c727.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262576012032:android:944cb5698db6f5aa",
+        "android_client_info": {
+          "package_name": "com.boats.market.marven.dell.marven"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262576012032-jv3kaqc0abg603js2f26kepla8aci35a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boats.market.marven.dell.marven",
+            "certificate_hash": "2f4bb3c9b81ee2c2b60f707255b7732df3db5a6d"
+          }
+        },
+        {
+          "client_id": "262576012032-gitt1k221edkt6t778fcn788cnqnn05g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boats.market.marven.dell.marven",
+            "certificate_hash": "bee2c09237322660a1563fcc9886744438a838b5"
+          }
+        },
+        {
+          "client_id": "262576012032-66ae4f58q0re16uq5gaeeqq7qk5bbnp7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqh1ES7r_VGXj_idlDT5oNwpZfOkIyo_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262576012032-66ae4f58q0re16uq5gaeeqq7qk5bbnp7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

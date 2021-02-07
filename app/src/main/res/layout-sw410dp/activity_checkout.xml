@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.boats.market.marven.dell.marven.CheckoutActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="7dp"
+                android:text="Delivery Adress"
+                android:textColor="#5f6474"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/changeadress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="-10dp"
+                android:text="CHANGE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/adress_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/name_adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/mycolor"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/building_adress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/street_adress"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/area_adress"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/floor_adress"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/apartmentnum_adress"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/state_adress"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/phone_adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/mycolor" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/noadress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:lineSpacingExtra="3dp"
+                        android:text="Add your delivery locations to place order"
+                        android:textColor="#5f6474"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addadress_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="ADD ADDRESS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Order Summary"
+                android:textColor="#5f6474"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="2 items"
+                        android:textColor="#4d5365"
+                        android:visibility="gone"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+                    <ListView
+                        android:id="@+id/listview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nestedScrollingEnabled="true"
+                        android:scrollbars="none">
+
+                    </ListView>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Discount Voucher"
+                android:textColor="#5f6474"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/vouchercode_edittxt"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2"
+                        android:hint="Voucher Code"
+                        android:paddingLeft="20dp"
+                        android:textColor="#000" />
+
+                    <Button
+                        android:id="@+id/redeem_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/startshoping_style"
+                        android:text="REDEEM"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Payment"
+                android:textColor="#5f6474"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Cash"
+                            android:id="@+id/cash_btn"
+
+                            />
+
+                        <RadioButton
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Visa"
+                            android:id="@+id/visa_btn"/>
+
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:visibility="gone"
+                        android:background="@color/mycolor" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/subtotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sub Total"
+                            android:textColor="@color/mycolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/subtotal_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/mycolor"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Discount"
+
+                            android:textColor="@color/mycolor"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/discountvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="0 EGP"
+                            android:textColor="@color/mycolor"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/totalamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total amount"
+                            android:textColor="#000"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="1825 EGP + delivery fee"
+                            android:textColor="#000"
+                            android:textSize="17sp"
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/placeorder_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn"
+                android:text="PLACE ORDER"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

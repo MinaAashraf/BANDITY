@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/colorPrimary"
+    android:id="@+id/custom_toolbar2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_logo"
+            android:paddingLeft="-30dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/home_logo"
+            android:transitionName="logo_transition"
+            />
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="BANDITY"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/search_icon"
+            android:layout_toRightOf="@id/home_logo"
+            android:textSize="23sp"
+            android:id="@+id/title"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-5dp"
+
+            />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            android:layout_centerVertical="true"
+            android:id="@+id/search_icon"
+            android:layout_toLeftOf="@id/relative"
+            android:layout_marginRight="15dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/relative"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/cart_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/cart_counter_txt"
+                android:textColor="#000"
+                android:background="@drawable/circle"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

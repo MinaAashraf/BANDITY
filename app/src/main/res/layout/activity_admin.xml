@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.boats.market.marven.dell.marven.AdminActivity">
+    <include layout="@layout/custom_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/addcategory_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/categoruname_edittxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:maxLength="20"
+                    android:hint="Category name" />
+
+
+
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:text="Upload pictue"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/category_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/add_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:text="ADD SUB CATEGORY"
+                    android:textSize="15sp" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/subname_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_sub_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:enabled="false"
+                    android:background="@drawable/border"
+                    android:text="UPLOAD SUB CATEGORY PICTURE"
+                    android:textSize="13sp" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/subImagesList"
+                    android:nestedScrollingEnabled="true"
+                    ></ListView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/startshoping_style"
+                        android:text="Cancel"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/save_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn"
+                        android:text="Save"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/progressbar7"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/categories_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/addcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/btn1"
+                    android:text="CREATE CATEGORY"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/btn1"
+                    android:text="PUBLISH CATEGORY"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/publish_btn"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/category_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/layout_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <Button
+                    android:id="@+id/categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/colorPrimary"
+                    android:text="CATEGORIES"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                     />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorPrimary"
+                    android:text="ADD  PRODUCT"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/add_product_btn"
+
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorPrimary"
+                    android:text="USERS"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/usersBtn"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorPrimary"
+                    android:text="VOUCHER CODES"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/codes_btn"
+
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorPrimary"
+                    android:text="ORDERS"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/orders_btn"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

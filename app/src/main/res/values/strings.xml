@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BANDITY</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_marven_location">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_tracking_path">Map</string>
+
+</resources>

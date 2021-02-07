@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context="com.boats.market.marven.dell.marven.AddProduct">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Product information"
+                android:textColor="#707583"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/pro_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="name"
+                        android:maxLength="13"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/pro_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:maxLength="4"
+                        android:layout_marginRight="50dp"
+
+                        android:hint="Price"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/pro_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:maxLength="4"
+                        android:hint="Price before sale  (optional)"
+                        android:inputType="number" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Product Colors"
+                android:textColor="#707583"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/colornum_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:hint="Colors Number"
+                            android:inputType="number"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/mycolor" />
+
+                        <Button
+                            android:id="@+id/numSave"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/startshoping_style"
+                            android:text="Save"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/colorname_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:enabled="false"
+                            android:hint="Color Name"
+
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/mycolor" />
+
+                        <Button
+                            android:id="@+id/nameSave"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/startshoping_style"
+                            android:enabled="false"
+                            android:text="Save"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/clearColors"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/startshoping_style"
+                            android:text="Clear"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/saveColors"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn"
+                            android:alpha="0.5"
+                            android:enabled="false"
+                            android:text="Save"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Product Size"
+                android:textColor="#707583"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sizenum_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:hint="Sizes Number"
+                            android:inputType="number"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/mycolor" />
+
+                        <Button
+                            android:id="@+id/numSaveSize"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/startshoping_style"
+                            android:text="Save"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/sizename_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:enabled="false"
+                            android:hint="Size"
+                            android:inputType="text"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/mycolor" />
+
+                        <Button
+                            android:id="@+id/nameSaveSize"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/startshoping_style"
+                            android:enabled="false"
+                            android:text="Save"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/clearSizes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/startshoping_style"
+                            android:text="Clear"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/saveSizes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn"
+                            android:enabled="false"
+                            android:text="Save"
+                            android:alpha="0.5"
+                            android:textColor="#fff"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:textColor="#707583"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <EditText
+                    android:id="@+id/description_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="Enter Description"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    android:padding="3dp" />
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Product category"
+                android:textColor="#707583"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/category_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp">
+
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/sub_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp">
+                        >
+
+                    </Spinner>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Product Pictures"
+                android:textColor="#707583"
+                android:textSize="25sp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <Button
+                    android:id="@+id/add_external_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="UPLOAD EXTERNAL PICTURE"
+                    android:textSize="15sp" />
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/edit" />
+
+                <ImageView
+                    android:id="@+id/ext_pro_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <Button
+                    android:id="@+id/addPro_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="UPLOAD INTERNAL PICTURES"
+                    android:textSize="15sp" />
+            </android.support.v7.widget.CardView>
+
+            <ListView
+                android:id="@+id/images_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="true"></ListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/finalClear_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/startshoping_style"
+                    android:text="Clear All"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/finalSave"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn"
+                    android:text="Save All"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+
+

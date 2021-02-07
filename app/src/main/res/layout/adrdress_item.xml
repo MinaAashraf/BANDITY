@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Remove"
+            android:background="#312b2762"
+            android:textColor="@color/colorPrimary"            android:padding="3dp"
+            android:id="@+id/remove_fab"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Edit"
+            android:background="#312b2762"
+            android:textColor="@color/colorPrimary"            android:gravity="center"
+            android:id="@+id/edit_fab"
+            android:padding="2dp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:background="#312b2762"
+            android:textColor="@color/colorPrimary"            android:gravity="center"
+            android:id="@+id/apply"
+            android:padding="2dp"
+            android:textSize="11sp"
+            android:textStyle="bold"
+
+            />
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adress_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/remove_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mycolor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/building_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/street_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/area_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/floor_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/apartmentnum_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/state_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Egypt"
+                    android:textColor="@color/mycolor"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/phone_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/mycolor"
+                android:textSize="12sp"
+
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

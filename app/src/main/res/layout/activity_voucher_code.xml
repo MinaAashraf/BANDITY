@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mycolor"
+    android:orientation="vertical"
+    tools:context="com.boats.market.marven.dell.marven.VoucherCode">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="casual"
+                android:text="VOUCHER"
+                android:textColor="#dddddd"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+                android:text="CODE"
+                android:textColor="#dddddd"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:rotation="-20"
+                android:src="@drawable/gift_icon" />
+
+            <EditText
+                android:id="@+id/makevoucherCode_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="30dp"
+                android:background="#ddd"
+                android:hint="CODE"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textColorHint="#979393" />
+
+            <EditText
+                android:id="@+id/codeValue_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="15dp"
+                android:background="#ddd"
+                android:hint="Discount value"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textColorHint="#979393" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="15dp"
+                android:background="#ddd"
+                android:paddingLeft="20dp"
+                android:textColor="#000" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="15dp"
+                android:background="#ddd"
+                android:paddingLeft="20dp"
+                android:textColor="#000" />
+
+
+            <Button
+                android:id="@+id/apply_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="monospace"
+                android:text="Apply Code"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove code"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/remove_code_txt"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

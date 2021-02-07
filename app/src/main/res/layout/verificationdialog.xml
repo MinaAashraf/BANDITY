@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+
+        <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/layout"
+            android:background="@drawable/verify_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/verificationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/verifytxt"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="Phone Verification"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+
+
+                <TextView
+                    android:id="@+id/pleaseWrite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/verificationTitle"
+                    android:text="Please write the code"
+                    android:textColor="#000" />
+
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_horizontal"
+                    android:hint="Code"
+                    android:inputType="number"
+                    android:itemBackground="#eee"
+                    android:maxHeight="1dp"
+                    android:minHeight="0dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:hideLineWhenFilled="true"
+                    app:itemCount="6"
+                    app:itemHeight="60dp"
+                    app:itemRadius="15dp"
+                    app:itemSpacing="8dp"
+                    app:itemWidth="40dp"
+                    app:lineColor="#fff"
+                    app:viewType="rectangle"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/resendbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/startshoping_style"
+                        android:text="Resend code"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/verifybtn"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn"
+                        android:text="Confirm"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+
+</RelativeLayout>
+
+
+

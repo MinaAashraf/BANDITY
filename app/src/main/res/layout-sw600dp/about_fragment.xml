@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/callus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Call Us"
+                    android:textColor="#707583"
+                    android:textSize="30sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/callus_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#fff">
+
+
+                    <TextView
+                        android:id="@+id/call_us_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:text="01551104560"
+                        android:textColor="#686d7c"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/right"
+
+                        />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/showyourlove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Show Your Love"
+                    android:textColor="#707583"
+                    android:textSize="30sp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#fff"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74.5dp"
+                        android:id="@+id/rate_layout"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/rating_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Rate Us"
+                            android:textColor="#686d7c"
+                            android:textSize="30sp"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/rating_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/share_layout"
+                        android:layout_height="74.5dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/sharing_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Share The App"
+                            android:textColor="#686d7c"
+                            android:textSize="30sp"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/sharing_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Info"
+                    android:textColor="#707583"
+                    android:textSize="30sp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#fff"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/stores_laout"
+                        android:layout_marginRight="10dp"
+                       >
+
+                        <TextView
+                            android:id="@+id/storebranches_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Facebook"
+                            android:textColor="#686d7c"
+                            android:textSize="30sp"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/storebranches_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74.5dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/page_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/facepage_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:text="Instagram"
+                            android:textColor="#686d7c"
+                            android:textSize="30sp"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/facepage_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Policy"
+                    android:textColor="#707583"
+                    android:textSize="30sp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#fff"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/policy_layout"
+                        >
+
+                        <TextView
+                            android:id="@+id/policy_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Refund Policy"
+                            android:textColor="#686d7c"
+                            android:textSize="30sp"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/policy_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="74.5dp"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/termsOfUse_layout"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/terms_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Terms Of Use"
+                            android:textColor="#686d7c"
+                            android:textSize="30sp"
+
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/terms_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

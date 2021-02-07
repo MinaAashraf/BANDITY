@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="holoSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3F51B5</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/mycolor</item>
+        <item name="colorControlActivated">#292561</item>
+
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">#ffffff</item> <!-- Whatever color you want-->
+    </style>
+
+
+</resources>

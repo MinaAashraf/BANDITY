@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    tools:context="com.boats.market.marven.dell.marven.MailSenderActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="To"
+                android:textStyle="bold"
+                android:textColor="@color/mycolor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/to_txt"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/startshoping_style"
+                android:elevation="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="ashrafmina444@gmail.com"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Subject"
+                android:textStyle="bold"
+                android:textColor="@color/mycolor"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/subject_edit"
+                android:text="BANDITY"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:elevation="10dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Message"
+                android:textStyle="bold"
+                android:textColor="@color/mycolor"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/message_edit"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:elevation="10dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLines="13"
+                android:padding="11dp"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn"
+                android:text="Send"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

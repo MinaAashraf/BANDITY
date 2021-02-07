@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.boats.market.marven.dell.marven.PlaceOrder">
+
+    <include layout="@layout/custom_toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/confirmation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="Do you want to \n place order?"
+            android:textColor="@color/mycolor"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Order will be delivered within a week"
+            android:textColor="@color/mycolor"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/startshoping_style"
+                android:text="Back"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn"
+                android:text="Confirm"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
