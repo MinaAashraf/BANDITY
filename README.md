@@ -12,7 +12,7 @@
 
 ## Screen Shots
 
-<img src="https://user-images.githubusercontent.com/48159614/206850794-77f98d63-327b-43ad-8009-03270c53c82d.jpg" width="300" height="667">
+<img src="https://user-images.githubusercontent.com/48159614/206850794-77f98d63-327b-43ad-8009-03270c53c82d.jpg">
 
 <img src="https://user-images.githubusercontent.com/48159614/206850818-f7bd3519-4fd4-4420-95ef-17d1ad58ea79.jpg" width="300" height="667">
 
