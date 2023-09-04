@@ -29,11 +29,8 @@
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/MinaAashraf/BANDITY/assets/48159614/185e77e9-f2b5-4fe5-8689-8c12db37f072" width="30%" />
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   
-    
-  <br></p>  <br></p>
-
-
+</p>   
+<br></br>
 
 
 ## Links
